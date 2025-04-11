@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="/ts-moment1.2-v2.77a9bc14.css">
+    <script src="/ts-moment1.2-v2.cad412a0.js" type="module"></script>
+</head>
+<body>
+
+    <header>
+        <p class="logo">Moment 1.2</p>
+        <nav>
+            <div class="hamburger">
+                <span class="bar to-bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Lista på kurser</h1>
+
+    <main>
+        <h2 class="fomr-h2">Kursformulär</h2>
+        <form>
+            <label class="label" for="code"><p>Kurskod:</p></label>
+            <br>
+            <input type="text" id="code" name="code">
+            <br>
+            <label class="label" for="name"><p>Kursnamn:</p></label>
+            <br>
+            <input class="label" type="text" id="name" name="name">
+            <br>
+            <label class="label" for="progression"><p>Progression:</p></label>
+            <br>
+            <input type="text" id="progression" name="progression">
+            <br>
+            <label class="label" for="syllabus"><p>Kursplan:</p></label>
+            <br>
+            <input type="text" id="syllabus" name="syllabus">
+        </form>
+
+        <button class="submit-button" id="submitButton">Skicka</button>
+
+        <h2 class="courses-h2">Kurser</h2>
+        <div id="submittedCourses"></div>
+    </main>
+    
+</body>
+</html>

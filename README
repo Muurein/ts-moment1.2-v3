@@ -1,0 +1,32 @@
+# Boilerplate for future projects with NPM Parcel in Frontend-course VT2025
+
+
+## course-info - interface:
+- kurskod - code v
+- kursnamn - name v
+- progression, A, B eller C - progression v
+- URL till kursplan - syllabus v
+
+
+## localStorage:
+- spara kursinfo
+- hämta kursinfo 
+- när sidan laddas om ska appen försöka hämta sparad kursinfo från localStorage
+Hitta tidigare projekt där localStorage användes för att använda som hjälp
+
+
+
+## funktioner:
+- lägg till ny kurs v
+- visa info om kurserna v
+- funktionerna ska uppdatera både kurslistan och localStorage
+måste finnas form-element i HTML som kan hittas via ID och sen inserta input till, har gjort liknande förut. Finns hjälp i tänker i Backend? Eller tidigare uppgift i tidigare kurs.
+
+
+## webbplats: 
+- visa lista över kurser 
+- kunna lägga till nya kurser v
+- använd DOM-manipulation för att uppdatera webbsidan när kursen har lagts till - window.reload?
+- använd enkel validering för att kontrollera att kurskden är unik och att kursens progression är korrekt - JS upp 5, istället för 5 tecken, titta efter om något är === tidigare inlagda kurskoder, se om progression är korrekt via x.progression?
+- responsiv
+- definiera typer för alal variabler, parametrar och returvärden

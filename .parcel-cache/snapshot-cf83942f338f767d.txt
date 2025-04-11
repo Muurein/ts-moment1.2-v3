@@ -1,0 +1,21 @@
+20
+96C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\src\css\styles.css133881623500956441 0
+90C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\package.json133880978683326470 0
+95C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\package-lock.json133880978683026668 0
+88C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\.gitignore133880978682359409 0
+82C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\dist133881623501170025 1
+84C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\README133881440295668772 0
+81C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\src133880980596209097 1
+84C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\src\js133880978684167910 1
+85C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\src\css133880978683816093 1
+92C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\src\index.html133881623519474900 0
+93C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\dist\index.html133881623429995833 0
+92C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\src\ts\main.ts133880998556762136 0
+84C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\src\ts133880980669324874 1
+92C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\src\js\main.js133880978684353136 0
+114C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\dist\ts-moment1.2-v2.cad412a0.js.map133881617053534448 0
+111C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\dist\ts-moment1.2-v2.77a9bc14.css133881623501135119 0
+115C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\dist\ts-moment1.2-v2.77a9bc14.css.map133881623501160397 0
+110C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\dist\ts-moment1.2-v2.b828852a.js133880993631546113 0
+114C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\dist\ts-moment1.2-v2.b828852a.js.map133880993631581719 0
+110C:\Users\Amanda\Documents\Webbutveckling 2024-2026\Typescript\ts-moment1.2-v2\dist\ts-moment1.2-v2.cad412a0.js133881617053502718 0
