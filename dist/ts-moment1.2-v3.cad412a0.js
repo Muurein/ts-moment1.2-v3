@@ -678,9 +678,12 @@ const submitButtonEl = document.getElementById("submitButton");
 const formEl = document.getElementById("courseForm");
 const messageUniqueEl = document.getElementById("notUnique");
 const properProgEl = document.getElementById("properProg");
+//array för att lagra kurser, ska använda interfacet CourseInfos upplägg
 let courses = [];
+//när sidan laddas in
 window.onload = ()=>{
     courses = loadStorage();
+    //visa kurserna som ska ligga inne från början
     if (courses.length === 0) courses.push({
         code: "DT071G",
         name: "Programmering i C#.NET",
@@ -695,7 +698,7 @@ window.onload = ()=>{
     storeCourses(courses);
     update();
 };
-//se till att knappen inte är disabled efter att kurskoden har ändrats
+//se till att knappen inte är disabled efter att kurskoden/kursprogressionen har ändrats
 inputCodeEl.addEventListener("change", ()=>{
     submitButtonEl.disabled = false;
     messageUniqueEl.innerHTML = "";
@@ -704,6 +707,7 @@ inputProgEl.addEventListener("change", ()=>{
     submitButtonEl.disabled = false;
     properProgEl.innerHTML = "";
 });
+//kollar om kurskoden är unik och ser till att skicka-knappen blir disabled
 function uniqueCoursecode() {
     for(let i = 0; courses.length > i; i++)if (inputCodeEl.value === courses[i].code) {
         submitButtonEl.disabled = true;
@@ -712,6 +716,7 @@ function uniqueCoursecode() {
     }
     return true;
 }
+//kollar så man bara kan skriva in vissa värden i "Kursprogression" och ser till att skicka-knappen blir disabled
 function progString() {
     const allowedValue = [
         "a",
@@ -728,8 +733,8 @@ function progString() {
     properProgEl.innerHTML = "Anv\xe4nd r\xe4tt progressionsdata";
     return false;
 }
+//använd användarens input
 formEl.addEventListener("submit", (event)=>{
-    console.log("clicked");
     event.preventDefault();
     //skapa ny kurs med hjälp av CourseInfo interface
     const newCourse = {
@@ -740,10 +745,8 @@ formEl.addEventListener("submit", (event)=>{
     };
     if (uniqueCoursecode() === false) return;
     if (progString() === false) return;
+    //lägg till nya kursen i arrayen
     courses.push(newCourse);
-    console.log(newCourse);
-    //åkalla inputConstruction så den nya kursen kan skrivas ut
-    //inputConstruction(newCourse);
     storeCourses(courses);
     update();
 });
@@ -751,7 +754,7 @@ formEl.addEventListener("submit", (event)=>{
 function update() {
     const coursesDivEl = document.getElementById("submittedCourses");
     coursesDivEl.innerHTML = "";
-    //
+    //konstruktionen
     courses.forEach((course, index)=>{
         coursesDivEl.innerHTML += `<article>
         <h3>Kurs:</h3>
@@ -766,6 +769,7 @@ function update() {
 function storeCourses(data) {
     localStorage.setItem("courses", JSON.stringify(data));
 }
+//ladda in kurser
 function loadStorage() {
     //om courses är null, använd istället en tom array
     return JSON.parse(localStorage.getItem("courses") ?? "[]");
