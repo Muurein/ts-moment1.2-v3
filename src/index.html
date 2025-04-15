@@ -6,7 +6,7 @@
     <title>Document</title>
     
     <link rel="stylesheet" href="css/styles.css">
-    <script src="ts/main.ts" type="module"></script>
+    <script src="ts/main.ts" type="module" defer></script>
 </head>
 <body>
 
@@ -24,11 +24,12 @@
     <h1>Lista på kurser</h1>
 
     <main>
-        <h2 class="fomr-h2">Kursformulär</h2>
-        <form>
+        <h2 class="form-h2">Kursformulär</h2>
+        <form id="courseForm">
             <label class="label" for="code"><p>Kurskod:</p></label>
             <br>
             <input type="text" id="code" name="code">
+            <p id="notUnique"></p>
             <br>
             <label class="label" for="name"><p>Kursnamn:</p></label>
             <br>
@@ -37,30 +38,19 @@
             <label class="label" for="progression"><p>Progression:</p></label>
             <br>
             <input type="text" id="progression" name="progression">
+            <p id="properProg"></p>
             <br>
             <label class="label" for="syllabus"><p>Kursplan:</p></label>
             <br>
             <input type="text" id="syllabus" name="syllabus">
+            <button class="submit-button" id="submitButton">Skicka</button>
         </form>
 
-        <button class="submit-button" id="submitButton">Skicka</button>
+        
 
         <h2 class="courses-h2">Kurser</h2>
         <div id="submittedCourses">
-            <article>
-                <h3>Kurs:</h3>
-                <p>Kurskod: DT071G</p>
-                <p>Kursnamn: Programmering i C#.NET</p>
-                <p>Kursprogression: A</p>
-                <p>Kursplan: https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT071G/</p>
-            </article>
-
-            <article>
-                <h3>Kurs: </h3>
-                <p>Kurskod: IK060G</p>
-                <p>Kursprogression: A</p>
-                <p>Kursplan: https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/IK060G/</p>
-            </article>
+            
         </div>
     </main>
     

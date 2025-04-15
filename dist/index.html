@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <link rel="stylesheet" href="/ts-moment1.2-v2.77a9bc14.css">
-    <script src="/ts-moment1.2-v2.cad412a0.js" type="module"></script>
+    <link rel="stylesheet" href="/ts-moment1.2-v3.77a9bc14.css">
+    <script src="/ts-moment1.2-v3.cad412a0.js" type="module" defer=""></script>
 </head>
 <body>
 
@@ -24,11 +24,12 @@
     <h1>Lista på kurser</h1>
 
     <main>
-        <h2 class="fomr-h2">Kursformulär</h2>
-        <form>
+        <h2 class="form-h2">Kursformulär</h2>
+        <form id="courseForm">
             <label class="label" for="code"><p>Kurskod:</p></label>
             <br>
             <input type="text" id="code" name="code">
+            <p id="notUnique"></p>
             <br>
             <label class="label" for="name"><p>Kursnamn:</p></label>
             <br>
@@ -37,16 +38,20 @@
             <label class="label" for="progression"><p>Progression:</p></label>
             <br>
             <input type="text" id="progression" name="progression">
+            <p id="properProg"></p>
             <br>
             <label class="label" for="syllabus"><p>Kursplan:</p></label>
             <br>
             <input type="text" id="syllabus" name="syllabus">
+            <button class="submit-button" id="submitButton">Skicka</button>
         </form>
 
-        <button class="submit-button" id="submitButton">Skicka</button>
+        
 
         <h2 class="courses-h2">Kurser</h2>
-        <div id="submittedCourses"></div>
+        <div id="submittedCourses">
+            
+        </div>
     </main>
     
 </body>
